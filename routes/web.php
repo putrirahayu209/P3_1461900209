@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\TransaksiController;
+use App\Http\Controllers\BarangController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/Transaksi0209', 'App\Http\Controllers\TransaksiController@index');
+Route::resource('/Barang0209', BarangController::class);
+Route::get('/Barang0209', 'App\Http\Controllers\BarangController@index');
