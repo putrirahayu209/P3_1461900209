@@ -1,4 +1,4 @@
-<form action="{{ route('transaksi.store') }}" method="post">
+<form action="{{ route('Transaksi.store') }}" method="post">
     @csrf
     id: <input type="text" name="id">
     id_pelanggan: <input type="text" name="id_pelanggan">

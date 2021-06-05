@@ -10,7 +10,8 @@
 </head>
 <body>
   <div style="overflow-x:auto;">
-  <a class="tambah" href="{{route('transaksi.store')}}"> Tambah Data </a>
+  <a class="tambah" href="{{route(
+  'Transaksi.store')}}"> Tambah Data </a>
   <div class="bg-white rounded-lg shadow-lg py-6">
     <div class="block overflow-x-auto mx-6">
       <h1>View</h1>
@@ -37,7 +38,10 @@
         </tbody>
       </table>
       <br>
+      
+
       </div>
+  </div>
   </div>
 </body>
 </html>

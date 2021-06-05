@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Transaksi;
 use Illuminate\Http\Request;
 
-class TransaksiController extends Controller
+class BarangController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +13,7 @@ class TransaksiController extends Controller
      */
     public function index()
     {
-        $transaksi = Transaksi::all();
-        return view ('Transaksi0209', ['Transaksi' => $transaksi]);
+        //
     }
 
     /**
@@ -25,7 +23,7 @@ class TransaksiController extends Controller
      */
     public function create()
     {
-        return view('Transaksi_Tambah0209');
+        //
     }
 
     /**
@@ -36,13 +34,7 @@ class TransaksiController extends Controller
      */
     public function store(Request $request)
     {
-        Transaksi::create([
-            'id' => $request-> id,
-            'id_pelanggan' => $request-> id_pelanggan,
-            'id_barang' => $request-> id_barang, 
-        ]);
-        return redirect('Transaksi');
-
+        //
     }
 
     /**
