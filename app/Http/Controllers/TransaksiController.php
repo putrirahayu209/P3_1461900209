@@ -18,7 +18,7 @@ class TransaksiController extends Controller
         return view ('Transaksi0209', ['Transaksi' => $transaksi]);
     }
 
-    /**
+    /** 
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -64,7 +64,8 @@ class TransaksiController extends Controller
      */
     public function edit($id)
     {
-        //
+        $transaksi = Transaksi::find($id);
+        return view('Transaksi_Edit0209', ['Transaksi' => $transaksi]);
     }
 
     /**
@@ -76,7 +77,13 @@ class TransaksiController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $transaksi = Transaksi::find("id");
+        $transaksi->id = $request->id;
+        $transaksi->id_pelanggan = $request->id_pelanggan;
+        $transaksi->id_barang = $request->id_barang;
+        $transaksi->save();
+
+        return redirect('Transaksi');
     }
 
     /**
