@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="{{asset('css/app.css')}}" />
 </head>
 <body>
-
+  <div style="overflow-x:auto;">
+  <a class="tambah" href="{{route('Transaksi.store')}}"> Tambah Data </a>
   <div class="bg-white rounded-lg shadow-lg py-6">
     <div class="block overflow-x-auto mx-6">
       <h1>View</h1>
@@ -22,11 +23,11 @@
           </tr>
         </thead>
         <tbody>
-        @foreach($transaksi as $transaksi)
+        @foreach($Transaksi as $Transaksi)
           <tr class="w-full font-light text-gray-700 whitespace-no-wrap border">
-            <td class="px-4 py-4">{{ $transaksi->id }}</td>
-            <td class="px-4 py-4">{{ $transaksi->id_pelanggan }}</td>
-            <td class="px-4 py-4">{{ $transaksi->id_barang }}</td>
+            <td class="px-4 py-4">{{ $Transaksi->id }}</td>
+            <td class="px-4 py-4">{{ $Transaksi->id_pelanggan }}</td>
+            <td class="px-4 py-4">{{ $Transaksi->id_barang }}</td>
             <td class="text-center py-4">
               <a href="#"><span class="fill-current text-green-500 material-icons">Edit</span></a> !
               <a href="#"><span class="fill-current text-red-500 material-icons">Hapus</span></a>

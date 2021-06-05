@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TransaksiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('/transaksi', TransaksiController::class);
+Route::get('/Transaksi0209', 'App\Http\Controllers\TransaksiController@index');
